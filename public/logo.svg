@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Authentic diagonal gradient: vibrant lime-green top-left to deep forest emerald bottom-right -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8fe340" />
+      <stop offset="30%" stop-color="#65d045" />
+      <stop offset="65%" stop-color="#2cb54a" />
+      <stop offset="100%" stop-color="#166e2e" />
+    </linearGradient>
+
+    <!-- Subtle organic noise grain filter -->
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.14 0" in="noise" result="coloredNoise" />
+      <feComposite operator="in" in="coloredNoise" in2="SourceGraphic" result="composite" />
+      <feBlend mode="overlay" in="composite" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Background with subtle grain -->
+  <rect width="1024" height="1024" fill="url(#bgGradient)" filter="url(#grain)" />
+
+  <!-- The Exact Bridge Graphic in pure white (#FFFFFF) -->
+  <path fill="#FFFFFF" fill-rule="evenodd" d="
+    M 482 304
+    L 542 304
+    C 542 410, 640 535, 824 574
+    L 824 628
+    L 542 628
+    L 542 674
+    L 652 674
+    L 652 724
+    L 372 724
+    L 372 674
+    L 482 674
+    L 482 628
+    L 200 628
+    L 200 574
+    C 384 535, 482 410, 482 304
+    Z
+    M 482 420
+    L 482 574
+    L 334 574
+    Z
+    M 542 420
+    L 690 574
+    L 542 574
+    Z
+  " />
+</svg>

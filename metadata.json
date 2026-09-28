@@ -1,0 +1,6 @@
+{
+  "name": "PTFSbridge",
+  "description": "We are PTFSbridge, the community hub for PTFS fans and server owners! Here, you can grow your community through discoveri™ embeds, catch partner flights, and connect with fellow avgeeks in a friendly space!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

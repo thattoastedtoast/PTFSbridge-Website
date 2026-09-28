@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTFSbridge — Community Hub for PTFS Fans & Server Owners</title>
+  <meta name="description" content="We are PTFSbridge, the community hub for PTFS fans and server owners! Grow your community through discoveri™ embeds, catch partner flights, and connect with fellow avgeeks in a friendly space!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Elms Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#8fe340',
+              forest: '#0b1a0d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Elms Sans', system-ui, sans-serif;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #8fe340 0%, #42ba49 40%, #1c883e 75%, #14682c 100%); background-attachment: fixed;
+      color: #FFFFFF;
+    }
+    h1, h2, h3, h4 {
+      letter-spacing: -0.05em;
+      line-height: 0.95;
+    }
+    p {
+      letter-spacing: -0.025em;
+      line-height: 1.18;
+    }
+    .fade-section {
+      opacity: 0;
+      transform: translateY(2rem);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .fade-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-[#8fe340] text-white selection:bg-[#0b1a0d] selection:text-white antialiased min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-[#8fe340]/90 backdrop-blur-md border-b border-white/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- ELEMENTED Bridge Mark - Exactly 1:1 Aspect Ratio -->
+        <svg width="40" height="40" viewBox="0 0 512 512" fill="none" preserveAspectRatio="xMidYMid meet" class="shrink-0 aspect-square">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M 242 92 L 270 92 L 270 100 C 320 160, 376 260, 426 344 L 426 372 L 270 372 L 270 414 L 316 414 L 316 438 L 196 438 L 196 414 L 242 414 L 242 372 L 86 372 L 86 344 C 136 260, 192 160, 242 100 L 242 92 Z M 242 148 L 124 344 L 242 344 Z M 270 148 L 270 344 L 388 344 Z" fill="#F7F5DD"/>
+        </svg>
+        <span class="font-bold text-2xl tracking-[-0.04em] text-white leading-none">PTFSbridge</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-white tracking-[-0.03em] leading-none">
+        <a href="#about" class="hover:opacity-80 transition-opacity">about</a>
+        <a href="#discoveri" class="hover:opacity-80 transition-opacity">discoveri™</a>
+        <a href="#compare" class="hover:opacity-80 transition-opacity">comparison</a>
+        <a href="https://ptfsbridge.fillout.com/partnership" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">partnership form ↗</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://ptfsbridge.fillout.com/partnership" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs tracking-[-0.025em] leading-none border border-white/30 transition-all">
+          Partner Application
+        </a>
+        <a href="https://discord.gg/9PjNZzHdT" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-[#0b1a0d] hover:bg-[#153119] text-white font-bold text-xs tracking-[-0.025em] leading-none shadow-md transition-all">
+          Join Discord
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="pt-12 pb-16 sm:pt-16 sm:pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0b1a0d]/15 border border-white/30 text-xs sm:text-sm font-bold text-white mb-6">
+            <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+            <span class="tracking-[-0.03em] leading-none">everything launching soon • early partner applications open</span>
+          </div>
+
+          <h1 class="text-7xl sm:text-9xl md:text-[11rem] lg:text-[13rem] font-bold text-white tracking-[-0.06em] leading-[0.9] mb-6 lowercase select-none">
+            hey
+          </h1>
+
+          <p class="text-xl sm:text-2xl md:text-3xl text-white font-bold tracking-[-0.035em] leading-[1.12] max-w-3xl mb-10">
+            We are PTFSbridge, the community hub for PTFS fans and server owners! Here, you can grow your community through discoveri™ embeds, catch partner flights, and connect with fellow avgeeks in a friendly space!
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="https://discord.gg/9PjNZzHdT" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-2xl bg-[#0b1a0d] hover:bg-[#153119] text-white font-bold text-base sm:text-lg tracking-[-0.03em] leading-none shadow-xl transition-all">
+              Join our Discord
+            </a>
+            <a href="https://ptfsbridge.fillout.com/partnership" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-2xl bg-white hover:bg-[#f2faec] text-[#0b1a0d] font-bold text-base sm:text-lg tracking-[-0.03em] leading-none shadow-lg transition-all">
+              Partner with us ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section with subtle scroll fade-in -->
+    <section id="about" class="fade-section py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-bold uppercase tracking-[-0.02em] text-[#0b1a0d] bg-white/70 px-3 py-1 rounded-full mb-3 inline-block leading-none">What is PTFSbridge?</span>
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-[-0.05em] leading-[0.95]">the hub for PTFS fans & server owners.</h2>
+          <p class="text-lg sm:text-xl text-white/90 font-normal mt-3 tracking-[-0.03em] leading-[1.15]">Whether you run a regional airline, organize ATC sessions, or simply love flying Roblox skies with friends, PTFSbridge is built for you.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div class="bg-[#0b1a0d] p-8 sm:p-10 rounded-3xl text-white border border-white/15 flex flex-col justify-between shadow-xl">
+            <div>
+              <h3 class="text-2xl font-bold mb-2.5 tracking-[-0.04em] leading-[1.05]">Grow Your Server</h3>
+              <p class="text-sm font-normal text-white/80 tracking-[-0.025em] leading-[1.18]">Say goodbye to messy walls of text. discoveri™ spotlights what makes your community special.</p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white/10 text-xs font-bold text-[#8fe340] tracking-[-0.02em]">Zero bots required • Coming soon</div>
+          </div>
+
+          <div class="bg-[#0b1a0d] p-8 sm:p-10 rounded-3xl text-white border border-white/15 flex flex-col justify-between shadow-xl">
+            <div>
+              <h3 class="text-2xl font-bold mb-2.5 tracking-[-0.04em] leading-[1.05]">Catch Partner Flights</h3>
+              <p class="text-sm font-normal text-white/80 tracking-[-0.025em] leading-[1.18]">Team up to never fly an empty sky again. Connect with allied airlines, flight academies, and air traffic controllers for massive co-op flights.</p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white/10 text-xs font-bold text-[#8fe340] tracking-[-0.02em]">Group flights & shared skies</div>
+          </div>
+
+          <div class="bg-[#0b1a0d] p-8 sm:p-10 rounded-3xl text-white border border-white/15 flex flex-col justify-between shadow-xl">
+            <div>
+              <h3 class="text-2xl font-bold mb-2.5 tracking-[-0.04em] leading-[1.05]">Connect with RoAvgeeks</h3>
+              <p class="text-sm font-normal text-white/80 tracking-[-0.025em] leading-[1.18]">A welcoming hub built specifically for PTFS fans, creators, and server owners to hang out and collaborate.</p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white/10 text-xs font-bold text-[#8fe340] tracking-[-0.02em]">Welcoming all pilots & creators</div>
+          </div>
+        </div>
+
+        <div class="mt-10 p-8 rounded-3xl bg-white text-[#0b1a0d] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-xl">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[-0.02em] text-[#8fe340] bg-[#0b1a0d] px-2.5 py-1 rounded-md mb-2 inline-block leading-none">Founding Partners</span>
+            <h4 class="text-2xl font-bold tracking-[-0.04em] leading-tight">Want your server featured at launch?</h4>
+            <p class="text-sm font-normal text-[#0b1a0d]/80 tracking-[-0.025em] leading-[1.18] max-w-xl">We have no servers just yet — everything is coming soon. Fill out our quick partnership form to claim your spot.</p>
+          </div>
+          <a href="https://ptfsbridge.fillout.com/partnership" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-[#0b1a0d] hover:bg-[#234516] text-white font-bold text-sm tracking-[-0.03em] leading-none shrink-0 transition-all">
+            Apply Now ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Section with subtle scroll fade-in -->
+    <section id="compare" class="fade-section py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 border border-white/30 text-xs font-bold text-white mb-3 leading-none">
+            <span class="tracking-[-0.02em]">discoveri™ format vs old links</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-[-0.05em] leading-[0.95]">clean embeds, zero spam bots.</h2>
+          <p class="text-lg sm:text-xl text-white/90 font-normal mt-3 tracking-[-0.03em] leading-[1.15]">We don't use annoying bots, and we have no servers just yet — everything is coming soon!</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+          <div class="p-8 sm:p-10 rounded-3xl bg-[#0b1a0d]/30 border border-white/20 backdrop-blur-sm flex flex-col justify-between">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-white/10 text-white/80 text-xs font-bold uppercase tracking-[-0.02em] leading-none">The Old Way</span>
+              <h3 class="text-2xl sm:text-3xl font-bold text-white my-4 tracking-[-0.04em] leading-[1.05]">Traditional Link Dumping</h3>
+              <div class="space-y-3.5 text-base sm:text-lg font-bold text-white tracking-[-0.03em] leading-tight">
+                <div class="flex items-center gap-3"><span>✕</span><span>Walls of emojis and plain text</span></div>
+                <div class="flex items-center gap-3"><span>✕</span><span>Spam bots & risk</span></div>
+                <div class="flex items-center gap-3"><span>✕</span><span>Zero real engagement</span></div>
+              </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white/15 text-xs text-white/60 font-bold tracking-[-0.02em]">Outcome: Cluttered server channels with low conversion.</div>
+          </div>
+
+          <div class="p-8 sm:p-10 rounded-3xl bg-white text-[#0b1a0d] shadow-2xl flex flex-col justify-between">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-[#8fe340]/25 text-[#0b1a0d] text-xs font-bold uppercase tracking-[-0.02em] leading-none">The PTFSbridge Way</span>
+              <h3 class="text-2xl sm:text-3xl font-bold text-[#0b1a0d] my-4 tracking-[-0.04em] leading-[1.05]">discoveri™ Embeds</h3>
+              <div class="space-y-3.5 text-base sm:text-lg font-bold text-[#0b1a0d] tracking-[-0.03em] leading-tight">
+                <div class="flex items-center gap-3"><span class="text-[#8fe340]">✓</span><span>We don't use bots</span></div>
+                <div class="flex items-center gap-3"><span class="text-[#8fe340]">✓</span><span>Eye-catching visual cards</span></div>
+                <div class="flex items-center gap-3"><span class="text-[#8fe340]">✓</span><span>Catch partner flights</span></div>
+              </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-[#0b1a0d]/10 flex items-center justify-between text-xs font-bold tracking-[-0.02em]">
+              <span>Founding partner spots open</span>
+              <a href="https://ptfsbridge.fillout.com/partnership" class="underline hover:opacity-75">apply here ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Super Big "come join us" CTA with subtle scroll fade-in -->
+    <section id="join" class="fade-section py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[2.5rem] bg-[#0b1a0d] p-8 sm:p-14 lg:p-20 text-white border border-white/20 shadow-2xl">
+          <h2 class="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold text-white tracking-[-0.06em] leading-[0.9] mb-8 lowercase select-none">
+            come join us
+          </h2>
+
+          <p class="text-xl sm:text-2xl text-white/90 font-bold max-w-2xl tracking-[-0.035em] leading-[1.12] mb-10">
+            Be part of our founding community. Connect with other PTFS server owners, catch collaborative partner flights, and get early discoveri™ embeds.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="https://discord.gg/9PjNZzHdT" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-2xl bg-[#8fe340] hover:bg-[#88e364] text-[#0b1a0d] font-bold text-base sm:text-lg tracking-[-0.03em] leading-none shadow-xl transition-all">
+              Join our Discord
+            </a>
+            <a href="https://ptfsbridge.fillout.com/partnership" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-2xl bg-white hover:bg-white/90 text-[#0b1a0d] font-bold text-base sm:text-lg tracking-[-0.03em] leading-none shadow-md transition-all">
+              Partnership Form ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#08150a] text-white py-12 sm:py-14 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+        <div class="md:col-span-6 space-y-3.5">
+          <div class="flex items-center gap-3">
+            <svg width="36" height="36" viewBox="0 0 512 512" fill="none" preserveAspectRatio="xMidYMid meet" class="shrink-0 aspect-square">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M 242 92 L 270 92 L 270 100 C 320 160, 376 260, 426 344 L 426 372 L 270 372 L 270 414 L 316 414 L 316 438 L 196 438 L 196 414 L 242 414 L 242 372 L 86 372 L 86 344 C 136 260, 192 160, 242 100 L 242 92 Z M 242 148 L 124 344 L 242 344 Z M 270 148 L 270 344 L 388 344 Z" fill="#F7F5DD"/>
+            </svg>
+            <span class="font-bold text-2xl tracking-[-0.04em] text-white leading-none">PTFSbridge</span>
+          </div>
+          <p class="text-sm font-normal text-white/80 max-w-md tracking-[-0.025em] leading-[1.18]">
+            We are PTFSbridge, the community hub for PTFS fans and server owners! Here, you can grow your community through discoveri™ embeds, catch partner flights, and connect with fellow avgeeks in a friendly space!
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2.5">
+          <h4 class="text-xs font-bold uppercase tracking-[-0.02em] text-white/60 leading-none">Community Hub</h4>
+          <ul class="space-y-1.5 text-sm font-bold tracking-[-0.03em] leading-tight">
+            <li><a href="#about" class="hover:text-[#8fe340]">about</a></li>
+            <li><a href="#discoveri" class="hover:text-[#8fe340]">discoveri™</a></li>
+            <li><a href="#compare" class="hover:text-[#8fe340]">comparison</a></li>
+            <li><a href="#join" class="hover:text-[#8fe340]">come join us</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3 space-y-2.5">
+          <h4 class="text-xs font-bold uppercase tracking-[-0.02em] text-white/60 leading-none">Official Links</h4>
+          <ul class="space-y-1.5 text-sm font-bold tracking-[-0.03em] leading-tight">
+            <li><a href="https://discord.gg/9PjNZzHdT" target="_blank" rel="noopener noreferrer" class="hover:text-[#8fe340]">Join Discord ↗</a></li>
+            <li><a href="https://ptfsbridge.fillout.com/partnership" target="_blank" rel="noopener noreferrer" class="hover:text-[#8fe340]">Partnership Application ↗</a></li>
+            <li><a href="https://www.roblox.com/games/69184822/Pilot-Training-Flight-Simulator" target="_blank" rel="noopener noreferrer" class="hover:text-[#8fe340]">Roblox PTFS Game ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-normal text-white/60 tracking-[-0.02em] leading-none">
+        <p>© 2026 PTFSbridge. Not affiliated with Roblox Corporation or Pilot Training Flight Simulator.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 z-50 p-3.5 sm:px-4 sm:py-3 rounded-2xl bg-[#0b1a0d] hover:bg-[#204014] text-white font-bold text-xs tracking-[-0.03em] leading-none shadow-2xl border border-white/25 hidden items-center gap-2 transition-all transform hover:-translate-y-1 cursor-pointer">
+    <span>↑</span>
+    <span class="hidden sm:inline">top</span>
+  </button>
+
+  <script>
+    // Standard browser IntersectionObserver for subtle fade-in scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Back to top button showing after scrolling down > 18%
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight > 0 && (scrollTop / docHeight) > 0.18) {
+        backToTopBtn.classList.remove('hidden');
+        backToTopBtn.classList.add('flex');
+      } else {
+        backToTopBtn.classList.add('hidden');
+        backToTopBtn.classList.remove('flex');
+      }
+    });
+  </script>
+</body>
+</html>
